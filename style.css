@@ -46,11 +46,14 @@ header::before {
 
 h1 {
   font-family: "Caveat Brush", cursive;
-  font-size: 3em;
+  font-size: 10em;
+  text-align: center;
 }
 
 h2 {
   font-family: "Caveat Brush", cursive;
+  font-size: 4em;
+  text-align: center;
 }
 
 main {
