@@ -133,9 +133,30 @@ figcaption {
 
 footer {
   grid-area: footer;
-  background-image: url("https://www.vangoghgallery.com/skin/img/sunf_header.jpg");
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   min-height: 3rem;
+}
+
+footer::before {
+  content: "";
+  background-image: url("https://www.vangoghgallery.com/skin/img/sunf_header.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   opacity: 0.6;
+}
+
+footer > p {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {
